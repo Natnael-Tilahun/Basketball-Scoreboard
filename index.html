@@ -1,0 +1,71 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&family=Quantico:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container">
+            <div style="display:flex ; justify-content: space-evenly;">
+
+            <div>
+                <h3 class="board-title-home">HOME</h3>
+                <div class="home-score">
+                    <h1 class="home-points-text " id="first-score-point">0</h1>
+                </div>
+                <div class="add-points-btns-home">
+                    <div class="plus-one-point" >
+                        <div class="rectangle" id="left-plus-one" onclick="addLeftPlusOne()">
+                            <p class="text">+1</p>        
+                        </div>
+                    </div>
+                    <div class="plus-two-point" >
+                        <div class="rectangle" id="left-plus-two" onclick="addLeftPlusTwo()">
+                            <p class="text">+2</p>        
+                        </div>
+                    </div>
+                    <div class="plus-three-point" >
+                        <div class="rectangle" id="left-plus-three" onclick="addLeftPlusThree()">
+                            <p class="text">+3</p>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timer">
+                <p class="timer-p">00: <span id="second"></span></p>
+            </div>
+            <div>
+                <h3 class="board-title-home">GUEST</h3>
+                <div class="home-score">
+                    <h1 class="home-points-text" id="second-score-point">0</h1>
+                </div>
+                <div class="add-points-btns-home">
+                    <div class="plus-one-point" >
+                        <div class="rectangle" id="right-plus-one" onclick="addRightPlusOne()">
+                            <p class="text">+1</p>        
+                        </div>
+                    </div>
+                    <div class="plus-two-point" >
+                        <div class="rectangle" id="right-plus-two" onclick="addRightPlusTwo()">
+                            <p class="text">+2</p>        
+                        </div>
+                    </div>
+                    <div class="plus-three-point" >
+                        <div class="rectangle" id="right-plus-three" onclick="addRightPlusThree()">
+                            <p class="text">+3</p>        
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+               <div class="new-game">
+                <button class="new-game-btn" id="new-game-btn" onclick="newGameHandler()">New Game</button>
+            </div>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
