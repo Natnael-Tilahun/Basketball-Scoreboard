@@ -1,145 +1,267 @@
-@font-face{
-   font-family: digital;
-   src: url(./fonts/DS-DIGI.TTF)
+/* new font for digital clock */
+@font-face {
+  font-family: digital;
+  src: url(./fonts/DS-DIGI.TTF);
 }
 body {
-    margin: 0;
-    background-color: azure;
+  margin: 0;
+  background-color: azure;
 }
 
+/* the score board container */
 .container {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
-    width: 80vw;
-    height: 75vh;
-    background-color: #1B244A;
-    border: 5px solid white;
-    border-radius: 20px;
-    margin: auto;
-    margin-block: 50px; 
+  width: 80vw;
+  height: 75vh;
+  background-color: #1b244a;
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: auto;
+  margin-block: 50px;
 }
 
-.timer{
-    width: 270px;
-    height: 90px;
-    border: 3px solid white;
-    margin-top: 50px;
-    background-color: #2d3557;
-}
-.timer-p{
-    color: rgb(252, 202, 109);
-    font-size: 50px;
-    text-align: center;
-    font-family: digital;
-    line-height: 0px;
-    letter-spacing: 5px;
-}
-.board-title-home{
-    width: 149px;
-    height: 15px;
-    left: 85px;
-    top: 68px;
-    font-family: 'Verdana';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 36px;
-    text-align: center;
-    color: #EEEEEE;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 90px;
+/* div that consists the timer p */
+.timer {
+  width: 270px;
+  height: 90px;
+  border: 3px solid white;
+  margin-top: 50px;
+  background-color: #2d3557;
 }
 
-.home-score{
-    width: 155px;
-    height: 120px;
-    left: 82px;
-    top: 100px;
-    background-color: #080001;
-    border-radius: 5px;
+/* p that display the time */
+.timer-p {
+  color: rgb(252, 202, 109);
+  font-size: 50px;
+  text-align: center;
+  font-family: digital;
+  line-height: 0px;
+  letter-spacing: 5px;
 }
 
-.home-points-text{
-    width: 157px;
-    height: 120px;
-    left: 100px;
-    top: 125px;
-    font-family: 'digital';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 90px;
-    line-height: 127px;
-    text-align: center;
-    color: #F94F6D;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* teams title or name */
+.board-title-home {
+  width: 149px;
+  height: 15px;
+  left: 85px;
+  top: 68px;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 36px;
+  text-align: center;
+  color: #eeeeee;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 90px;
 }
 
-.add-points-btns-home{
-    width: 155px;
-    height: 45px;
-    left: 82px;
-    top: 271px;
-    padding-top: 26px;
-    display: flex;
-    justify-content: space-between
+/* teams score points display div */
+.home-score {
+  width: 155px;
+  height: 120px;
+  left: 82px;
+  top: 100px;
+  background-color: #080001;
+  border-radius: 5px;
 }
 
-.plus-one-point{
-    width: 45px;
-    height: 45px;
-    left: 337px;
-    top: 271px;
+/* the h1 that display the score points */
+.home-points-text {
+  width: 157px;
+  height: 120px;
+  left: 100px;
+  top: 125px;
+  font-family: "digital";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 127px;
+  text-align: center;
+  color: #f94f6d;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.plus-two-point{
-    width: 45px;
-    height: 45px;
-    left: 391px;
-    top: 271px;
+/* score points button group */
+.add-points-btns-home {
+  width: 155px;
+  height: 45px;
+  left: 82px;
+  top: 271px;
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.plus-three-point{
-    /* position: absolute; */
-    width: 45px;
-    height: 45px;
-    left: 447px;
-    top: 271px;
-}
-.rectangle{
-    width: 45px;
-    height: 45px;
-    border: 2px solid #9AABD8;
-    border-radius: 5px;
+/* +1 score point button */
+.plus-one-point {
+  width: 45px;
+  height: 45px;
+  left: 337px;
+  top: 271px;
 }
 
-.text{
-    font-family: 'digital';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 1px;
-    text-align: center;
-    color: #9AABD8;
-    margin-top: 20px
+/* +2 score point button */
+.plus-two-point {
+  width: 45px;
+  height: 45px;
+  left: 391px;
+  top: 271px;
 }
 
-.new-game{
-    display: flex;
-    /* width: 100vw; */
-    justify-content: center;
-    padding: 55px;
+/* +3 score point button */
+.plus-three-point {
+  width: 45px;
+  height: 45px;
+  left: 447px;
+  top: 271px;
 }
 
-.new-game-btn{
-    padding-inline: 45px;
-    padding-block: 15px ;
-    background-color: green;
-    border-radius: 8px;
-    color: #fff;
-    border: 2px solid #9AABD8;
+/* score points button rectangle box */
+.rectangle {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
 }
 
-.new-game-btn:hover{
-    background-color: rgb(3, 77, 3);
+/* score points button text */
+.text {
+  font-family: "digital";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1px;
+  text-align: center;
+  color: #9aabd8;
+  margin-top: 20px;
+}
+
+/* div that consists the new game button */
+.new-game-div {
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+}
+
+/* new game button */
+.new-game-btn {
+  padding-inline: 45px;
+  padding-block: 15px;
+  background-color: green;
+  border-radius: 8px;
+  color: #fff;
+  border: 2px solid #9aabd8;
+}
+
+.new-game-btn:hover {
+  background-color: rgb(3, 77, 3);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /*Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  width: 1000px;
+  height: 250px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  border: 1px solid white;
+  background-color: #1b244a;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px; /* Negative half of height. */
+  margin-left: -500px; /* Negative half of width. */
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  text-align: center;
+  color: #aaa;
+}
+
+#winnerSpan {
+  font-size: 50px;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
