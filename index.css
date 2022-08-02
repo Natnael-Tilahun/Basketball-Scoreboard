@@ -178,7 +178,7 @@ body {
 /* Modal Content */
 .modal-content {
   position: fixed;
-  width: 1000px;
+  width: 70%;
   height: 250px;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
@@ -189,7 +189,7 @@ body {
   top: 50%;
   left: 50%;
   margin-top: -200px; /* Negative half of height. */
-  margin-left: -500px; /* Negative half of width. */
+  margin-left: -35%; /* Negative half of width. */
 }
 
 /* The Close Button */
