@@ -47,18 +47,18 @@ body {
   font-family: "Verdana";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 36px;
+  font-size: 55px;
+  line-height: 40px;
   text-align: center;
   color: #eeeeee;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 90px;
+  padding-top: 150px;
 }
 
 /* teams score points display div */
 .home-score {
-  width: 155px;
-  height: 120px;
+  width: 195px;
+  height: 140px;
   left: 82px;
   top: 100px;
   background-color: #080001;
@@ -67,14 +67,14 @@ body {
 
 /* the h1 that display the score points */
 .home-points-text {
-  width: 157px;
+  /* width: 157px; */
   height: 120px;
   left: 100px;
   top: 125px;
   font-family: "digital";
   font-style: normal;
   font-weight: 400;
-  font-size: 90px;
+  font-size: 120px;
   line-height: 127px;
   text-align: center;
   color: #f94f6d;
@@ -83,7 +83,7 @@ body {
 
 /* score points button group */
 .add-points-btns-home {
-  width: 155px;
+  width: 190px;
   height: 45px;
   left: 82px;
   top: 271px;
@@ -98,6 +98,7 @@ body {
   height: 45px;
   left: 337px;
   top: 271px;
+  cursor: pointer;
 }
 
 /* +2 score point button */
@@ -106,6 +107,7 @@ body {
   height: 45px;
   left: 391px;
   top: 271px;
+  cursor: pointer;
 }
 
 /* +3 score point button */
@@ -114,6 +116,7 @@ body {
   height: 45px;
   left: 447px;
   top: 271px;
+  cursor: pointer;
 }
 
 /* score points button rectangle box */
