@@ -76,9 +76,17 @@ const timerCounter = setInterval(() => {
     clearInterval(timerCounter);
     document.querySelector(".timer-p").style.color = "red";
     modal.style.display = "block";
-    leftScore > rightScore
-      ? (document.getElementById("winnerSpan").textContent = "Home")
-      : (document.getElementById("winnerSpan").textContent = "Guest");
+
+    if(leftScore > rightScore){
+      document.getElementById("winnerSpan").textContent = "Home"
+    }
+    else if(leftScore < rightScore){
+      document.getElementById("winnerSpan").textContent = "Guest";
+    }
+    else{
+      document.querySelector(".winnerHeader").textContent = "Draw!";
+      // document.getElementById("winnerSpan").textContent = "Draw!";
+    }
   }
 
   if (timeLeft - counter < 10) {
@@ -98,7 +106,7 @@ function newGameHandler() {
   secondScore.textContent = rightScore;
   firstScore.style.color = "#F94F6D";
   secondScore.style.color = "#F94F6D";
-  timeLeft = 30;
+  timeLeft = 29;
   document.getElementById("second").textContent = timeLeft;
   document.querySelector(".timer-p").style.color = "rgb(252, 202, 109)";
 
@@ -108,9 +116,17 @@ function newGameHandler() {
       clearInterval(timerCounter);
       document.querySelector(".timer-p").style.color = "red";
       modal.style.display = "block";
-      leftScore > rightScore
-        ? (document.getElementById("winnerSpan").textContent = "Home")
-        : (document.getElementById("winnerSpan").textContent = "Guest");
+
+      if(leftScore > rightScore){
+        document.getElementById("winnerSpan").textContent = "Home"
+      }
+      else if(leftScore < rightScore){
+        document.getElementById("winnerSpan").textContent = "Guest";
+      }
+      else{
+        document.getElementById("winnerHeader").textContent = "Draw!";
+      }
+
     }
 
     if (timeLeft - counter < 10) {
@@ -119,7 +135,6 @@ function newGameHandler() {
     } else {
       document.getElementById("second").textContent = timeLeft - counter;
     }
-
     timeLeft -= 1;
   }, 1000);
 }
